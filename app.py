@@ -31,7 +31,7 @@ def post_value(before, after):
 
 def generate_alien_reply(user_message, conversion_type):
     import openai
-    openai.api_key = " "
+    openai.api_key = "自身のopenaiAPI"
     prompt_text = "入力した文章を全て絵文字のみで返すようにしてアルファベットや日本語を返さないように\n"
 
     if conversion_type == "emoji_to_text":
