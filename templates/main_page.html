@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="all_page">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main_page</title>
+    <link rel="stylesheet" href="/static/css/main_page_detail.css" type="text/css">
+    <link rel="stylesheet" href="/static/css/main_page_move.css" type="text/css">
+</head>
+<body>
+    <div class="main">
+        <header class="site_header_wrapper">
+            <a class="site_name">😎 PICTOGLAPH CONVERTER 🤩</a>
+        </header>
+
+        <div class="explain_app_div">
+            <a class="explain_app_area"> 
+                This web application can convert text and pictograms into each other.
+                <br>Please operate in the following order.
+                <br>(1) Write the text or pictogram you want to convert in the 'INPUT TEXT AREA'.
+                <br>(2) Select the method of conversion from the pull-down in the middle.
+                <br>(3) Press the middle "PUSH" button.
+                <br>This is all that is required to convert the text. Please use it!
+            </a>
+        </div>
+
+        <div class="explain_app_div_for_small">
+            <label class="open" for="pop-up">Click here: INSTRUCTON</label>
+            <input type="checkbox" id="pop-up">
+            <div class="overlay">
+                <div class="window">
+                    <label class="close" for="pop-up">閉じる</label>
+                    <p> 
+                        This web application can convert text and pictograms into each other.
+                        <br>Please operate in the following order.
+                        <br>(1) Write the text or pictogram you want to convert in the 'INPUT TEXT AREA'.
+                        <br>(2) Select the method of conversion from the pull-down in the middle.
+                        <br>(3) Press the middle "PUSH" button.
+                        <br>This is all that is required to convert the text. Please use it!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="all_text_area">
+            <form action="/" method="POST" id="post_form">
+                <div class="all_get_post">
+                    <div class="post_text">
+                        <div class="post_massage_div">
+                            <a for="message" class="post_massage">INPUT TEXT AREA</a>
+                        </div>
+                        <textarea name="post_text" class="post_input_text" placeholder="  - ENTER TEXT HERE -" minlength="1">{{before_conversion_text}}</textarea>
+                    </div>
+
+                    <div class="selectbox_div">
+                        <label class="selectbox-002">
+                            <select name="choice">
+                                <option>text_to_emoji</option>
+                                <option>emoji_to_text</option>
+                            </select>
+                        </label>
+            
+                        <div class="center_arrow_button">
+                            <button form="post_form" type="submit" class="button">P U S H</button>
+                        </div>
+                    </div>
+
+                    <div class="all_get">
+                        <form action="" method="get">
+                            <div class="get_text">
+                                <div class="get_massage_div">
+                                    <a for="message" class="get_massage">AFTER CONVERSION</a>
+                                </div>
+                                <textarea name="get-text" class="get_input_text">{{after_conversion_text}}</textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="board_frame_div">
+            <iframe class= "board_frame" src="/board"  style="border:4px solid black; border-radius: 10px;"></iframe>
+        </div>
+
+    </div>    
+</body>
+</html>
