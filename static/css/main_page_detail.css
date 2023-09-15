@@ -1,0 +1,482 @@
+.all_page{
+    background-color: rgb(246, 182, 146);
+}
+
+/* ここからヘッダーの設定 */
+
+.site_header_wrapper{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 90px;
+    padding-bottom: 0px;
+    font-family: 'Snap ITC', serif;
+}
+
+.site_header_wrapper a{
+    font-size: 85px;
+    font-family: 'Snap ITC', serif;
+    text-align: center;
+}
+
+
+/* ここから説明の設定 */
+
+.explain_app_div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+
+.explain_app_area{
+    background-color: rgb(246, 182, 146);
+    font-family: 'Snap ITC', serif;
+    font-size: 28px;
+}
+
+
+
+
+
+
+.explain_app_div_for_small{
+    display: none;
+}
+
+.open {
+	cursor:pointer;
+    background-color: white;
+    font-family: 'Comic Sans MS', serif;
+    border: 2px solid black;
+    padding: 10px;
+}
+#pop-up {
+	display: none;
+}
+.overlay {
+	display: none;
+}
+#pop-up:checked + .overlay {
+	display: block;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.6);
+}
+.window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 90vw;
+	max-width: 360px;
+    padding: 20px;
+	height: 300px;
+	background-color: #fff;
+	border-radius: 4px;
+	align-items: center;
+	transform: translate(-50%, -50%);
+}
+.close {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	cursor:pointer;
+}
+
+
+
+
+/* ここからテキストエリア全体の設定 */
+
+.all_text_area{
+    display: flex;
+    justify-content: space-evenly;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-bottom: 30px;
+}
+
+.all_get_post{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* ここからテキストエリアポストの設定 */
+
+.post_massage_div{
+    font-size: 40px;
+    font-family: 'Snap ITC', serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post_text{
+    text-align: center;
+}
+
+.post_input_text{
+    display: block;
+    width: 550px;
+    height: 150px;
+    background-color: rgb(252, 126, 103);
+    /* border-radius: 10px; */
+    margin: auto;
+    font-size: 26px;
+    padding: 10px;
+    padding-top: 15px;
+    font-family: 'Comic Sans MS', serif;
+    border: 2px solid black;
+}
+
+.post_button{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ここからテキストエリア中間の設定 */
+.selectbox-002 {
+    position: relative;
+}
+
+.selectbox-002::before,
+.selectbox-002::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox-002::before {
+    right: 0;
+    display: inline-block;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 0 3px 3px 0;
+    background-color: #37474f;
+    content: '';
+}
+
+.selectbox-002::after {
+    position: absolute;
+    top: 50%;
+    right: 1.4em;
+    transform: translate(50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    content: '';
+}
+
+.selectbox-002 select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 150px;
+    height: 2.8em;
+    padding: .4em 3.6em .4em .8em;
+    border: 2px solid #37474f;
+    border-radius: 3px;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'arial black', serif;
+}
+
+.selectbox-002 select:focus {
+    outline: 1px solid #37474f;
+}
+
+
+
+.arrow_img{
+    width: 140px;
+    height: 60px;
+}
+
+.arrow_img_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.center_arrow_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button {
+    background-color: rgb(55, 71, 79);
+    padding: 8px 18px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px rgb(37, 49, 55);
+    margin-top: 20px;
+    font-family: 'Inpact', serif;
+}
+.button:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+.selectbox_div{
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* .selectbox-002{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} */
+
+
+
+/* ここからテキストエリアゲットの設定 */
+
+.all_get{
+    display: block;
+    justify-content: center;
+}
+
+.get_massage_div{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.get_text{
+    text-align: center;
+    font-family: 'Snap ITC', serif;
+}
+
+.get_input_text{
+    display: block;
+    width: 550px;
+    height: 150px;
+    background-color: rgb(252, 126, 103);
+    /* border-radius: 10px; */
+    margin: auto;
+    font-size: 26px;
+    padding: 10px;
+    padding-top: 15px;
+    font-family: 'Comic Sans MS', serif;
+    border: 2px solid black;
+}
+
+
+
+/* ここからボードエリアの設定 */
+.all_board{
+    background-color: rgb(246, 182, 146);
+}
+
+.board_name{
+    /* position: fixed; */
+    font-family: 'Snap ITC', serif;
+    font-size: 47px;
+    text-align: center;
+}
+
+.board_area{
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border: 3px solid black;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    background-color: rgb(252, 126, 103);
+}
+
+.board_before{
+    margin: 15px;
+    font-family: 'Comic Sans MS', serif;
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: rgb(246, 176, 163);
+    width: 100%;
+    /* margin-right: 30px; */
+}
+
+.board_after{
+    margin: 15px;
+    font-family: 'Comic Sans MS', serif;
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: rgb(246, 176, 163);
+    width: 100%;
+    /* margin-left: 30px; */
+}
+
+.board_before p{
+    font-size: 27px;
+}
+
+.board_after p{
+    font-size: 27px;
+}
+
+.past_post_arrow_img{
+    width: 90px;
+    height: 40px;
+}
+
+.past_post_arrow_img_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.board_frame{
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.board_frame_div{
+    margin-left: 9%;
+    margin-right: 9%;
+    height: 800px;
+}
+
+@media (max-width:1300px){
+    .all_page{
+        font-family: "", serif;
+    }
+    
+    .site_header_wrapper a{
+        font-size: 38px;
+        margin-top: 10px;
+    }   
+
+    .explain_app_area{
+        display: none;
+    }
+
+    .all_get_post{
+        display: block;
+    }
+
+    .selectbox_div{
+        display: flexbox;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+
+    
+    .all_text_area{
+        display: block;
+        margin: 0%;
+    }
+
+    .post_massage{
+        font-size: 35px;
+    }
+
+    .post_input_text{
+        width: 85%;
+        font-size: 20px;
+        height: 120px;
+    }
+
+    .arrow_img{
+        display: none;
+    }
+
+    .button{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .get_massage{
+        font-size: 35px;
+    }
+
+    .get_input_text{
+        width: 85%;
+        font-size: 20px;
+        height: 120px;
+    }
+
+    .past_post_arrow_img{
+        width: 30px;
+        height: 20px;
+    }
+
+    .past_post_arrow_img_div{
+        display: flex;
+        align-items: center;
+    }
+
+    .board_frame_div{
+        margin: 0;
+        margin-right: 1%;
+        margin-top: 20px;
+    }
+
+    .board_name{
+        font-size: 35px;
+    }
+
+    .board_area{
+        display: block;
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    .board_before p{
+        font-size: 15px;
+    }
+
+    .board_area p{
+        font-size: 15px;
+    }
+
+    .board_before{
+        margin: 15px;
+        width: auto;
+    }
+    
+    .board_after{
+        margin: 15px;
+        width: auto;
+    }
+
+
+
+    .explain_app_div_for_small{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+
+}
+
+
