@@ -1,0 +1,347 @@
+.all_page{
+    background-color: rgb(246, 182, 146);
+}
+
+/* ここからヘッダーの設定 */
+
+.site_header_wrapper{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    padding-top: 60px;
+    padding-bottom: 0px;
+    font-family: 'Snap ITC', serif;
+}
+
+.site_header_wrapper a{
+    font-size: 85px;
+    font-family: 'Snap ITC', serif;
+    text-align: center;
+}
+
+
+/* ここから説明の設定 */
+
+.explain_app_div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+
+.explain_app_area{
+    background-color: rgb(246, 182, 146);
+    font-family: 'Snap ITC', serif;
+    font-size: 28px;
+}
+
+
+
+/* ここからテキストエリア全体の設定 */
+
+.all_text_area{
+    display: flex;
+    justify-content: space-evenly;
+    border: 4px solid black;
+    border-radius: 10px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-bottom: 30px;
+}
+
+.all_get_post{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* ここからテキストエリアポストの設定 */
+
+.post_massage_div{
+    font-size: 40px;
+    font-family: 'Snap ITC', serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post_text{
+    text-align: center;
+}
+
+.post_input_text{
+    display: block;
+    width: 570px;
+    height: 150px;
+    background-color: rgb(252, 126, 103);
+    /* border-radius: 10px; */
+    margin: auto;
+    font-size: 26px;
+    padding: 10px;
+    padding-top: 15px;
+    font-family: 'Comic Sans MS', serif;
+    border: 2px solid black;
+}
+
+.post_button{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ここからテキストエリア中間の設定 */
+.selectbox-002 {
+    position: relative;
+}
+
+.selectbox-002::before,
+.selectbox-002::after {
+    position: absolute;
+    content: '';
+    pointer-events: none;
+}
+
+.selectbox-002::before {
+    right: 0;
+    display: inline-block;
+    width: 2.8em;
+    height: 2.8em;
+    border-radius: 0 3px 3px 0;
+    background-color: #37474f;
+    content: '';
+}
+
+.selectbox-002::after {
+    position: absolute;
+    top: 50%;
+    right: 1.4em;
+    transform: translate(50%, -50%) rotate(45deg);
+    width: 6px;
+    height: 6px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    content: '';
+}
+
+.selectbox-002 select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    min-width: 150px;
+    height: 2.8em;
+    padding: .4em 3.6em .4em .8em;
+    border: 2px solid #37474f;
+    border-radius: 3px;
+    color: #333333;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'arial black', serif;
+}
+
+.selectbox-002 select:focus {
+    outline: 1px solid #37474f;
+}
+
+
+
+.arrow_img{
+    width: 140px;
+    height: 60px;
+}
+
+.arrow_img_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.center_arrow_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button {
+    background-color: rgb(55, 71, 79);
+    padding: 8px 18px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 5px rgb(37, 49, 55);
+    margin-top: 20px;
+    font-family: 'Inpact', serif;
+}
+.button:active{
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+}
+
+.selectbox_div{
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* .selectbox-002{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+} */
+
+
+
+/* ここからテキストエリアゲットの設定 */
+
+.all_get{
+    display: block;
+    justify-content: center;
+}
+
+.get_massage_div{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.get_text{
+    text-align: center;
+    font-family: 'Snap ITC', serif;
+}
+
+.get_input_text{
+    display: block;
+    width: 570px;
+    height: 150px;
+    background-color: rgb(252, 126, 103);
+    /* border-radius: 10px; */
+    margin: auto;
+    font-size: 26px;
+    padding: 10px;
+    padding-top: 15px;
+    font-family: 'Comic Sans MS', serif;
+    border: 2px solid black;
+}
+
+
+
+/* ここからボードエリアの設定 */
+.all_board{
+    border: 4px solid black;
+    margin-left: 9%;
+    margin-right: 9%;
+    border-radius: 10px;
+    background-color: rgb(246, 182, 146);
+}
+
+.board_name{
+    font-family: 'Snap ITC', serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+.board_area{
+    display: flex;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    border: 3px solid black;
+    border-radius: 10px;
+    justify-content: space-evenly;
+    background-color: rgb(252, 126, 103);
+}
+
+.board_before{
+    margin: 15px;
+    font-family: 'Comic Sans MS', serif;
+    border: 2px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+    background-color: rgb(254, 145, 126);
+}
+
+.board_after{
+    margin: 15px;
+    font-family: 'Comic Sans MS', serif;
+    border: 2px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: rgb(254, 145, 126);
+}
+
+.board_before p{
+    font-size: 27px;
+}
+
+.board_after p{
+    font-size: 27px;
+}
+
+.past_post_arrow_img{
+    width: 90px;
+    height: 40px;
+}
+
+.past_post_arrow_img_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+@media (max-width:1500px){
+    .site_header_wrapper a{
+        font-size: 30px;
+    }   
+
+    .explain_app_area{
+        display: none;
+    }
+
+    .all_text_area{
+        display: block;
+        margin: 0%;
+    }
+
+    .post_massage{
+        font-size: 40px;
+    }
+
+    .post_input_text{
+        width: 85%;
+        font-size: 20px;
+        height: 150px;
+    }
+
+    .arrow_img{
+        display: none;
+    }
+
+    .button{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-right: 50px;
+        margin-left: 50px;
+
+    }
+
+    .get_massage{
+        font-size: 40px;
+    }
+
+    .get_input_text{
+        width: 85%;
+        font-size: 20px;
+        height: 150px;
+    }
+
+}
+
+
